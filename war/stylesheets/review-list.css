@@ -1,0 +1,86 @@
+/******************************** WINE INFO ********************************/
+
+.wine-info .rating-icon {
+	cursor: pointer;
+	z-index: 2;
+}
+
+.rating-hover, .rating-clicked {
+	border: 1px solid #eedccb;
+	background-color: #f6f6f6;
+}
+
+.rating-clicked {
+	border-bottom: 1px solid #FBF6F2;
+}
+
+/******************************** WINE REVIEW ********************************/
+
+.wine-reviews {
+	padding: 0px 0;
+	clear: both;
+}
+
+
+.rating-header {
+	border: 1px solid #eedccb;
+}
+
+.wine-review-ratings .actions {
+	position: absolute;
+	height: 100%;
+	width: 50px;
+	right: 100%;
+	top:-1px;
+	overflow: hidden;
+	background-color: #fbf6f2;
+	border-top: 1px solid #eedccb;
+	border-left: 1px solid #eedccb;
+	border-bottom: 1px solid #eedccb;
+}
+
+.wine-review-ratings .actions a{
+	display: block;
+	padding: 10px 15px;
+	border-right:1px solid #eee;
+}
+
+.wine-review-ratings .rating-cell {
+	border-left: 1px solid #eedccb;
+	border-right: 1px solid #eedccb;
+	background-color: #f6f6f6;
+	color: #85412c;
+	padding: 10px 0;
+}
+
+.wine-review-ratings .rating-cell:hover{
+	background-color: #fbf6f2;
+	color: black;	
+}
+
+.wine-review-ratings .more-reviews-cell {
+	border-left: 1px solid #eedccb;
+	border-right: 1px solid #eedccb;
+	background-color: #f6f6f6;
+	padding: 10px 0;
+}
+
+.wine-review-ratings .more-reviews-cell a {
+	color: #999;
+}
+
+.wine-review-ratings .more-reviews-cell a:hover {
+	color: #666;
+}
+
+.wine-review-ratings .new-review-cell {
+	border-left: 1px solid #eedccb;
+	border-right: 1px solid #eedccb;
+	border-bottom: 1px solid #eedccb;
+	background-color: #f6f6f6;
+	padding: 10px 0;
+}
+
+.wine-review-ratings .rating-comment {
+	padding-left: 20px;
+}

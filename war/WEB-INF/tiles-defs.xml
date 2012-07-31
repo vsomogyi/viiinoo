@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="baseLayout" template="/WEB-INF/tiles/baseLayout.jsp">
+      <put-attribute name="title"  value="Vinofil"/>
+      <put-attribute name="header" value="/WEB-INF/tiles/header.jsp"/>
+      <put-attribute name="account" value="/WEB-INF/tiles/account.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/tiles/menu.jsp"/>
+      <put-attribute name="notification"   value="/WEB-INF/tiles/notification.jsp"/>
+      <put-attribute name="body"   value="/WEB-INF/tiles/body.jsp"/>
+      <put-attribute name="sidebar"   value="/WEB-INF/tiles/sidebar.jsp"/>
+	  <put-attribute name="footer"   value="/WEB-INF/tiles/footer.jsp"/>
+  </definition>
+  
+  <definition name="index" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome"/>
+      <put-attribute name="body"   value="/WEB-INF/views/index.jsp"/>      
+  </definition>
+  
+  <definition name="edit-account" extends="baseLayout">
+      <put-attribute name="title"  value="Account"/>
+      <put-attribute name="body"   value="/WEB-INF/views/edit-account.jsp"/>      
+  </definition>
+  
+  <definition name="view-account" extends="baseLayout">
+      <put-attribute name="title"  value="Edit Review"/>
+      <put-attribute name="body"   value="/WEB-INF/views/view-account.jsp"/>      
+  </definition>
+  
+  <definition name="diary" extends="baseLayout">
+      <put-attribute name="title"  value="Diary"/>
+      <put-attribute name="body"   value="/WEB-INF/views/diary.jsp"/>      
+  </definition>
+  
+  <definition name="winery" extends="baseLayout">
+  	  <put-attribute name="title"  value="Winery"/>
+      <put-attribute name="body"   value="/WEB-INF/views/edit-winery.jsp"/>      
+  </definition>
+  
+  <definition name="wineryView" extends="baseLayout">
+  	  <put-attribute name="title"  value="Details"/>
+      <put-attribute name="body"   value="/WEB-INF/views/view-winery.jsp"/>      
+  </definition>
+  
+    <definition name="wineries" extends="baseLayout">
+  	  <put-attribute name="title"  value="Wineries"/>
+      <put-attribute name="body"   value="/WEB-INF/views/list-winery.jsp"/>      
+  </definition>
+  
+  <definition name="wine" extends="baseLayout">
+      <put-attribute name="title"  value="Wine"/>
+      <put-attribute name="body"   value="/WEB-INF/views/edit-wine.jsp"/>      
+  </definition>
+  
+  <definition name="wineView" extends="baseLayout">
+      <put-attribute name="title"  value="WineDetails"/>
+      <put-attribute name="body"   value="/WEB-INF/views/view-wine.jsp"/>      
+  </definition>
+
+<definition name="wines" extends="baseLayout">
+      <put-attribute name="title"  value="Wines"/>
+      <put-attribute name="body"   value="/WEB-INF/views/list-wine.jsp"/>      
+  </definition>
+  
+ <definition name="review" extends="baseLayout">
+      <put-attribute name="title"  value="Review"/>
+      <put-attribute name="body"   value="/WEB-INF/views/add-review.jsp"/>      
+  </definition>
+  
+   <definition name="reviewView" extends="baseLayout">
+      <put-attribute name="title"  value="ReviewDetails"/>
+      <put-attribute name="body"   value="/WEB-INF/views/view-review.jsp"/>      
+  </definition>
+  
+   <definition name="reviewEdit" extends="baseLayout">
+      <put-attribute name="title"  value="Edit Review"/>
+      <put-attribute name="body"   value="/WEB-INF/views/edit-review.jsp"/>      
+  </definition>
+  
+  <definition name="searchResults" extends="baseLayout">
+      <put-attribute name="title"  value="SearchResults"/>
+      <put-attribute name="body"   value="/WEB-INF/views/searchResults.jsp"/>      
+  </definition>
+  
+  
+   <definition name="error" extends="baseLayout">
+      <put-attribute name="title"  value="Diary"/>
+      <put-attribute name="body"   value="/WEB-INF/views/error.jsp"/>      
+  </definition>
+</tiles-definitions>

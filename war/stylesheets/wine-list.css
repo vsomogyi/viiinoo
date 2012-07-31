@@ -1,0 +1,45 @@
+/******************************** ACTIONS ********************************/
+.wine-info .actions {
+	display: none;
+}
+
+.wine-info:hover .actions {
+	display: block;
+}
+
+
+/******************************** WINE INFO IN LISTS ********************************/
+
+.wine-info {
+	margin-bottom: -1px;
+}
+
+
+.wine-info .wine-name {
+	font-weight:bold;
+	font-size:18px;
+	padding:10px 0px 5px 0px;	
+}
+
+.wine-info .wine-winery{
+	font-size:12px;
+	font-weight:normal;
+	color:#bbb;	
+}
+
+.wine-info .wine-winery a {
+	color:#bbb;
+	text-decoration:underline;
+}
+
+.wine-info .wine-winery a:hover {
+	color:#73250d;
+	text-decoration:none;
+}
+
+.wine-info .wine-notes {
+	color:#666;
+	font-size:14px;
+	font-weight:normal;
+	padding-top:10px;
+}

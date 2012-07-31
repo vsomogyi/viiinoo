@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+h2 {	
+	color:#bbb;
+	margin-top:40px;
+	margin-bottom:10px;
+}
+
+.general-information h2 {
+	margin-top: 0px;
+}
+
+.production-header label, .varietal-header label {
+    margin-right: 0;
+    text-align: center;
+}
+
+.label {
+	margin-top:8px;
+}
+
+a.add-new-line {
+	background:#f6f6f6;
+	color:#aaa;
+	display:block;
+	font-size:10px;
+	text-align:center;
+	padding:5px;
+	
+}
+
+a.add-new-line:hover {
+	color:#666;
+}
+
+#add-varietal-line, #add-aging-line {
+	width:508px;
+}
+
+#add-aging-line {
+	margin-bottom:20px;
+}
+

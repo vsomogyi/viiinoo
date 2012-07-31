@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+.new-wine {
+	margin:30px 0;
+}
+
+.score {
+	height: 80px;
+	width: 100%;
+}
+
+.score div {
+	float: left;
+	height: 80px;
+	width: 18%;
+    border: 1px solid white;
+}
+
+.score div.selected {
+	background-color: #F6F6F6;
+    border: 1px solid #EEDCCB;
+}
+
+.score div.hover{
+    border: 1px solid #EEDCCB;
+}

@@ -1,0 +1,61 @@
+#tabs-container {
+	margin: 20px 0 10px 0;
+	padding:0px;
+}
+
+#wine-reviews .rating-comment {
+	padding-left: 20px;
+}
+
+.rating-0, .rating-1, .rating-2, .rating-3, .rating-4, .rating-5 {
+	background-position:50% 20px;
+	padding:80px 0 10px 0;
+}
+
+.add-button {
+    margin: 5px 10px 0px 10px;
+}
+
+.wine-info .wine-name {
+	padding:10px 0px 15px 0px;	
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wine-notes {
+	margin-top:-50px;
+	margin-bottom:20px;
+}
+
+#wine-details {
+	padding-top:0px;
+}
+
+#wine-details h2 {
+	margin-top:30px;
+	margin-bottom:15px;
+	color:#BBB;
+}
+
+#wine-details .label {
+	margin-top:3px;
+}
+
+#wine-details .production-aged {
+	margin-bottom:30px;
+	text-align:center;
+}
+
+#wine-details .item-name {
+	font-size:100%;
+}
+
+#wine-details .production-header label {
+	text-align:center;
+	margin-right:0px;
+}
+
+#wine-details .varietal-composition .label {
+	text-align: left;
+}

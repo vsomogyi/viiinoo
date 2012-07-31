@@ -1,0 +1,836 @@
+@CHARSET "UTF-8";
+
+/*
+COLORS
+
+Font - brown - #73250d
+Font - gray - #666
+Border - lite brown - #eedccb
+Menu background - lite orange - #fbf6f2
+Button - gray - #eeeeee
+Selected background - #ebf6e2
+Menu background grey - #eeeeee
+Menu border grey - #dfdfdf
+*/
+
+body {
+	color:#73250d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+}
+
+#content-wrapper, #header-inner, #account-inner {
+	min-width:960px;
+	width:960px;
+	margin: 0 auto;
+}
+
+p, 
+h1, h2, h3, h4, h5,
+a, a:active, a:visited, a:link {
+	color:#73250d;
+}
+
+h1 {
+	font-size:20px;
+	margin-bottom:20px;
+}
+
+a:hover {
+ 	color:#000;
+}
+
+a, a:hover, a:active, a:visited, a:link {
+	text-decoration:none;
+}
+
+ul {
+	list-style:none outside none;
+}
+
+li {
+	display:inline;
+}
+
+.center {
+	text-align:center;
+}
+
+.clear {
+	clear:both;
+}
+
+
+/******************************** COMMON ELEMENTS ********************************/
+
+
+.add-button {
+	font-size: 12px;
+    margin: 0 10px;
+    padding: 8px 10px 8px 30px;
+	background:#eeeeee url('../images/btnAdd.png') no-repeat 6px 6px;
+	border:1px solid #dfdfdf;
+	display: block;
+	text-align:center;
+}
+
+.add-button:hover {
+	background-color:#dddddd;
+}
+
+.edit-btn, .delete-btn {
+	display:block;
+	width:25px;
+	height:22px;
+}
+
+.edit-btn {
+	background:transparent url('../images/edit.png') no-repeat;
+}
+
+.edit-btn:hover {
+	background:transparent url('../images/editHover.png') no-repeat;
+}
+
+.delete-btn {
+	background:transparent url('../images/delete.png') no-repeat;
+}
+
+.delete-btn:hover {
+	background:transparent url('../images/deleteHover.png') no-repeat;
+}
+
+.big-edit-btn {
+	background:#f6f6f6;
+	border:1px solid #dfdfdf;
+	padding:5px;
+	text-align:center;
+	display:block;
+	width:200px;
+	margin:30px auto;
+}
+
+.big-edit-btn:hover {
+	background:#bbb;
+}
+
+
+.save-btn {
+	width:216px;
+	margin:20px;
+}
+
+.details-btn {
+	font-size: 10px;
+    margin: 10px 10px 0px 10px;
+    padding: 5px!important;
+	background:#eeeeee;
+	border:1px solid #dfdfdf;
+	display: block;
+	text-align:center;
+}
+
+.details-btn:hover {
+	background-color:#dddddd;
+}
+
+.add-field {
+	font-size: 12px;
+    margin-top: -1px;
+    padding: 9px 10px 9px 30px;
+	background:transparent url('../images/btnAdd.png') no-repeat 6px 6px;
+	border:1px solid #dfdfdf;
+	display: block;
+	text-align:center;
+}
+
+.add-field:hover {
+	background-color:#f6f6f6;
+}
+
+.add-field-selected, .add-field-selected:hover {
+	background-color:#E2F0B6;
+}
+
+.label {
+	color:#bbb;
+	font-size:12px;
+	margin-right:3px;
+	text-align:right;
+}
+
+.account-edit .label {
+	margin-top:8px;
+}
+
+.email-address {
+	margin-top:5px;
+}
+
+.item-name {
+	font-size:12px;
+	margin-top:1px;
+}
+
+
+.avatar-picture {
+	padding-top:10px;
+	text-align:center;
+}
+
+.avatar-picture img {
+	max-width:100px;
+	max-height:75px;
+}
+
+.messageType {
+	background: none repeat scroll 0 0 #F6F6F6;
+    color: #DCDCDC;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#pagination {
+	font-size: 12px;
+	text-align: center;
+}
+
+#pagination a {
+	color: #BBB;
+}
+
+#pagination .next, #pagination .previous {
+	border: 1px solid #CCC;
+	display: inline-block;
+	padding: 10px;
+	margin: 20px 10px;
+	width: 200px;
+}
+
+#pagination .next:hover, #pagination .previous:hover {
+	background: #F6F6F6;
+	color: #666;
+}
+
+/******************************** HEADER ********************************/
+
+#header, #account {
+	border-bottom:1px solid #ececec;
+	font-size:12px;
+}
+
+#header .logo {
+	display:inline;
+}
+
+#header .header-search {
+	display:inline;
+	position:absolute;
+	right:0px;
+	border:1px solid #dcdcdc;
+	height: 30px;
+    margin-top: 17px;
+}
+
+#header .header-search .search-btn {
+	border:none;
+	width:75px;
+	background:transparent;
+	color:#dcdcdc;
+	font-size:12px;
+}
+
+#header .header-menu a,
+#header .personal-tools a {
+	color:#dcdcdc;
+}
+
+#header .header-search .search-btn:hover, 
+#header .header-menu a:hover,
+#header .personal-tools a:hover{
+	color:#BBB;
+}
+
+#header .header-search .search-field {
+	border:none;
+	width:340px;
+}
+
+#header .header-menu {
+	margin-top:27px;
+}
+
+#header .header-menu a {
+	padding: 3px 5px 3px 10px;
+	border-left:1px solid #dcdcdc;
+}
+
+#header .header-menu .new-panel-bg {
+	display:none;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	position: fixed;
+	top:0;
+	left:0;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	z-index:10;
+}
+
+#header .header-menu .new-panel {
+	display:none;
+	background: #FFF;
+    border: 1px solid #DCDCDC;
+    margin: -22px 0 0 59px;
+    position: absolute;
+    width: 140px;
+    z-index: 20;
+    
+	-webkit-box-shadow: 0px 0px 10px 2px #ccc;
+	-moz-box-shadow: 0px 0px 10px 2px #ccc;
+	box-shadow: 0px 0px 10px 2px #ccc;
+}
+
+#header .header-menu .new-panel #create-new-review,
+#header .header-menu .new-panel #create-new-wine,
+#header .header-menu .new-panel #create-new-winery {
+	color: #73250d;
+	display: block;
+    font-size: 14px;
+    height: 24px;
+    margin: 5px;
+    padding-left: 45px;
+    padding-top: 12px;
+}
+
+#header .header-menu .new-panel #create-new-review:hover,
+#header .header-menu .new-panel #create-new-wine:hover,
+#header .header-menu .new-panel #create-new-winery:hover {
+	background-color: #F6F6F6;
+	font-weight: bold;
+}
+
+#header .header-menu .new-panel #create-new-review {
+	background:transparent url('../images/new-review.png') no-repeat 0 1px;
+}
+
+#header .header-menu .new-panel #create-new-wine {
+	background:transparent url('../images/new-wine.png') no-repeat 0 1px;
+}
+
+#header .header-menu .new-panel #create-new-winery {
+	background:transparent url('../images/new-winery.png') no-repeat 0 1px;
+}
+
+#header .personal-tools {
+	background:#f6f6f6;
+	display: inline-block;
+    float: right;
+    height: 33px;
+    margin-right: 19px;
+    padding: 27px 10px 0;
+    position: relative;
+    text-align: center;
+    max-width: 130px;
+	overflow:hidden;
+}
+
+#header .personal-tools .arrow {
+	position: relative;
+	top: -1px;
+	border-style: solid dashed dashed;
+	border-color: transparent;
+	border-top-color: #dcdcdc;
+	display: -moz-inline-box;
+	display: inline-block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width: 0;
+	border-width: 3px 3px 0;
+	padding-top: 1px;
+	left: 4px;
+}
+
+#header .personal-tools .login {
+	padding-left:15px;
+	padding-right:15px;
+}
+
+
+/***************************** ACCOUNT ********************************/
+
+#account {
+	background:#f6f6f6;
+	display:none;
+} 
+
+#account .account-menu {
+	float:right;
+	padding:15px 20px;
+}
+
+#account .account-menu a {
+	padding:0px 13px;
+	border-left:1px solid #dcdcdc;
+}
+
+#account .account-menu .name a {
+	border-left:none;
+}
+/******************************** MENU ********************************/
+
+#menu {
+	margin:40px 0 30px 0;
+	border-bottom:1px solid #eedccb;
+	background:#f6f6f6;
+}
+
+#menu li {
+	display:inline-block;
+	margin-bottom:-1px;
+}
+
+#menu a {
+	display:block;
+	font-size: 14px;
+    padding: 10px 30px 8px;
+	text-decoration:none;
+}
+
+#menu a:hover {
+	background:#ffffff;
+}
+
+#menu .selected {
+	border-bottom:1px solid #ffffff;
+	border-left:1px solid #eedccb;
+	border-right:1px solid #eedccb;
+	background:#ffffff;
+}
+
+/******************************** SUBHEADER ********************************/
+
+.subheader h2 {
+	font-size:25px;
+	float:left;
+	margin-right:15px;
+	padding: 0 0 10px 0;
+}
+
+.subheader .description {
+	color:#BBB;
+	width: 444px;
+	font-size:12px;
+	padding:1px 10px 0 0;
+	margin-bottom:35px;
+	height: 30px;
+}
+
+/******************************** SIDEBAR ********************************/
+
+#sidebar {
+	border-left: 1px solid #eee;
+}
+
+#sidebar .featured-wine {
+	border-bottom: 1px solid #eee;
+	padding:20px 10px;
+}
+
+#sidebar .featured-wine img {
+	display:block;
+	margin:0 auto;
+}
+
+#sidebar .featured-wine .featured-name,
+#sidebar .featured-winery .featured-name {
+	font-size:16px;
+	font-weight:bold;
+	margin-top:7px;
+	margin-bottom:5px;
+}
+
+#sidebar .featured-wine .featured-producer {
+	color: #999;
+	font-size:12px;
+	margin-bottom:15px;
+}
+
+#sidebar .featured-wine .featured-score,
+#sidebar .featured-wine .featured-score-label {
+	font-size:12px;
+}
+
+#sidebar .featured-wine .featured-score-label {
+	color: #999;
+}
+
+#sidebar .featured-wine .featured-score {
+	color: #73250D;
+	font-weight: bold;
+}
+
+#sidebar .featured-winery {
+	background:#f6f6f6;
+	margin: 30px 0;
+	padding:10px;
+}
+
+#sidebar .featured-winery .featured-header {
+	background:url('../images/dots-gray.png') no-repeat 0px 1px;
+	color:#999;
+	font-size:12px;
+	padding-left:35px;
+	margin-bottom:15px;
+}
+
+#sidebar .featured-winery img {
+	display:block;
+	margin:0px auto;
+}
+
+#sidebar .featured-winery .featured-desc {
+	color:#666;
+	font-size:11px;
+	line-height:1.5;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+#sidebar .popular-wines .popular-header {
+	background:url('../images/dots.png') no-repeat 10px 1px;
+	color:#999;
+	font-size:12px;
+	padding-left:45px;
+}
+
+
+/******************************** FOOTER ********************************/
+
+#footer {
+	background:#f6f6f6;
+	border-top: 1px solid #eee;
+	color: #999999;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+
+/******************************** LISTING STYLING ********************************/
+
+.list-header {
+	color:#eedccb;
+	font-size:12px;
+	border-bottom:1px solid #eedccb;
+}
+
+.list-header div {
+	padding-bottom: 3px;
+/*	text-align: center; */
+}
+/* obsolete, use center class on other header fields*/
+.list-header div.first-header-elem, .table-header div.first-header-elem {
+	text-align: left;
+	padding-left: 20px;
+}
+
+.list-header .orderby {
+	text-align:right;
+}
+
+.list-header .orderby a {
+	color: #EEDCCB;
+	padding: 2px 5px;
+}
+
+.list-header .orderby a:hover {
+	background: #F6F6F6;
+	color: #CCC;
+}
+
+.list-header .orderby .selected-order {
+	background: #DDD;
+	color: #FFF;
+}
+
+.list-body .list-item {
+	padding:5px 0;
+	border-bottom: 1px dotted #eedccb;
+	/* to contain float elements*/
+	overflow: hidden;
+	clear: both;
+}
+
+/******************************** TABLE STYLING ********************************/
+
+.table .table-header {
+	background-color: #f6f6f6;
+	color: #eedccb;
+	font-size: 12px;
+	padding:3px 0px;
+	border:1px solid #eedccb;
+}
+
+.table .label {
+	
+}
+
+.table .row {
+	
+	/* to contain float elements*/
+	overflow: hidden;
+	clear: both;
+
+}
+
+/* list header 
+
+.list-header, .rating-header, 
+.rating .actions, .rating .actions a, .rating .actions a:active, .rating .actions a:focus, 
+.rating .actions a:hover, .rating .actions a:link, .rating .actions a:visited {
+	color:#eedccb;
+	font-size:12px;
+	border-bottom:1px solid #eedccb;
+	margin-bottom:10px;
+}
+
+.rating-header {
+	padding:3px 0px;
+	background:#FBF6F2;
+	margin-bottom:0px;
+}
+
+.rating-user {
+	padding-left:6px;
+}
+
+.rating .actions, .rating .actions a, .rating .actions a:active, .rating .actions a:focus, 
+.rating .actions a:hover, .rating .actions a:link, .rating .actions a:visited {
+	border:none;
+	margin-top:5px;
+}
+
+.rating .actions a:hover {
+	color:#73250d!important;
+}
+
+.list-header-description, .list-header-style, .list-header-rating {
+	padding-bottom:3px;
+}
+
+.list-header-style, .list-header-rating {
+	text-align:center;
+}
+
+
+fieldset {
+	border:1px solid #eee;
+	padding:10px;
+	margin:10px 0;
+}
+
+legend {
+	color:#eee;
+}
+
+*/
+
+/* LIST VIEW OF THE ITEMS 
+
+
+.item .actions {
+	margin-left:-25px;
+}
+
+
+*/
+
+
+
+/******************************** RATING AND STYLE ICONS ********************************/
+
+.rating-value {
+	text-align:center;
+	padding:70px 0 10px 0;
+	font-weight:normal;
+	font-size:12px;
+	border: 1px solid #ffffff;
+}
+
+.rating-value em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.rating-value div{
+	padding: 5px 0 0 0;
+}
+
+.ratings {
+	font-size:12px;
+}
+
+.rating-icon {
+	/* border: 1px solid #ffffff;*/
+	/* here should sprite come
+		background: no-repeat scroll 50% 10px transparent;
+		background-image:url('../images/ratings-sprite.png');
+	
+	*/
+}
+
+.Red {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/red.png');
+}
+
+.Rose {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/rose.png');
+}
+
+.Sparkling {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/sparkling.png');
+}
+
+.White {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/white.png');
+}
+
+.rating-none {
+	background: no-repeat scroll 50% 10px transparent;
+}
+
+.rating-0 {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/red.png');
+}
+
+.rating-1 {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/rate1.png');
+}
+
+.rating-2 {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/rate2.png');
+}
+
+.rating-3 {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/rate3.png');
+}
+
+.rating-4 {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/rate4.png');
+}
+
+.rating-5 {
+	background: no-repeat scroll 50% 10px transparent;
+	background-image:url('../images/rate5.png');
+}
+
+.review-box {
+	margin-left: -26.5% !important;
+}
+
+
+/******************************** FORM STYLING ********************************/
+
+.field {
+	margin:10px 0;
+}
+
+input, select, textarea {
+	border:1px solid #ccc;
+	padding:5px;
+	font-size:15px;
+	width:97%;
+}
+
+select {
+	padding:4px;
+	width:100%;
+}
+
+label {
+	display:block;
+	padding-bottom:5px;
+}
+
+.production-details .aged-months {
+	width:35px;
+}
+
+.production-details .container {
+	width:180px;
+}
+
+.production-details .aged-comment {
+	width:100%;
+}
+
+.varietal {
+	width:97%;
+}
+
+.varietal-percentage {
+	width:100%;
+}
+
+.character-kind {
+	color:#73250d;
+	margin-top:2px;
+	width:105px;
+}
+
+.percent, .dollar {
+	margin-top:6px;
+	margin-left:-25px;
+	display:inline;
+	position:absolute;
+}
+
+.dollar {
+	margin-left:-22px;
+}
+
+
+/******************************** ERROR STYLING ********************************/
+.error {
+	color: #ff0000;
+	font-style: italic;
+	clear:both;
+	display:block;
+}
+
+.input-error {
+	background:red;
+}
+
+.multifield-error {
+	margin-top:-10px;
+}
+
+/******************************** ELLIPSIS ********************************/
+.ellipsis{
+	overflow: hidden;
+/*	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	width: 100%;
+	*/	
+}
+
+.ellipsis a { /* the read more or the 3 dot*/
+	font-weight: bold;
+	font-size: 0.9em;
+	
+}
+

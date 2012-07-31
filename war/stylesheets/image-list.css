@@ -1,0 +1,179 @@
+@CHARSET "ISO-8859-1";
+
+.image-list label{
+	font-size: 10px;
+	padding: 5px;
+}
+
+.image-list input{
+	width: auto;
+	padding: 0;
+}
+
+.image-thumbnail {
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	border: 1px solid white;
+}
+
+.image-list .fileinput-button .image-thumbnail {
+	border: none;
+}
+
+.image-list .image-thumbnail canvas{
+	position: absolute;
+}
+
+
+.image-list li, .image-list div.upload-image{
+	display: block;
+	padding: 10px;
+	float: left;
+	position: relative;
+}
+
+.image-list .upload-image{
+	width: 100%
+}
+
+.existing-image, .image-list .upload-image.rich-image {
+	text-align: center;
+	border: 1px solid white;
+	width: auto;
+}
+
+.existing-image:hover, .image-list .upload-image.rich-image:hover {
+	border: 1px solid #DFDFDF;
+	background-color: #F6F6F6;
+	color: black;	
+}
+
+.existing-image:hover .image-thumbnail, .image-list .upload-image.rich-image:hover .fileinput-button{
+	border: 1px solid #DFDFDF;
+}
+
+/* fileupload-ui.css */
+
+/* add image tile */ 
+.image-list .rich-image .fileinput-button {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border: 1px solid #eedccb;
+	position: relative;
+	background: url('../images/addImage.png') no-repeat 0 0;
+}
+
+.image-list .rich-image .fileinput-button .hide-parent {
+	width: 150px;
+	height: 150px;
+	background-color: white;
+}
+
+/* add image tile - input transform */
+.image-list .rich-image.upload-image input{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	border: solid transparent;
+	border-width: 0 0 100px 200px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-o-transform: translate(250px, -50px) scale(1);
+	-moz-transform: translate(-400px, 60px) scale(7);
+	direction: ltr;
+	cursor: pointer;
+}
+
+.image-list .rich-image.existing-image .status{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 150px;
+	height: 150px;
+}
+
+
+/* hide inputs on other tiles until hover*/
+.image-list .rich-image.existing-image input {
+	position: absolute;
+	display: none;
+	opacity: 0.3;
+	filter: alpha(opacity=0);
+	top: 0;
+	right: 0;
+	margin: 0;
+}
+
+.image-list .rich-image.existing-image .button-area{
+	position: absolute;
+	bottom: 10px;
+	left: 12px;
+	width: 148px;	
+}
+
+.image-list .rich-image.existing-image .image-button{
+	position: relative;
+	left: -1000px;
+	background-color: #F6F6F6;
+	border: 1px solid #DFDFDF;
+	color: #AAAAAA;
+	font-size: 10px;
+	margin: 2px 0;
+	padding: 2px 0;
+	cursor: pointer;
+}
+
+.image-list .rich-image.existing-image label{
+	cursor: pointer;
+}
+
+/* on hover show buttons */
+.image-list .rich-image.existing-image:hover .image-button {
+	left: 0px;
+	
+}
+
+/* on button hover change font color*/
+.image-list .rich-image.existing-image .image-button:hover{
+	color: #666666;
+}
+
+.image-list .rich-image.delete .status {
+	background: url('../images/image_list_delete.png') no-repeat;
+}
+
+.image-list .rich-image.default .status {
+	background: url('../images/image_list_default.png') no-repeat;
+}
+
+/* hide default button if it is already default or if it is deleted*/
+.image-list .rich-image.default .image-button.default-select,
+.image-list .rich-image.delete .image-button.default-select {
+	display: none;
+}
+
+.image-list .rich-image.error-image .image-thumbnail{
+	border: 1px solid #ff0000;
+/*	background-image: url('../images/errorImage.png');*/
+}
+
+.image-list .rich-image.error-image ul {
+	width: 150px;
+	position: absolute;
+	top: 0px;
+	font-size: 0.7em;
+}
+
+.image-list .rich-image.error-image ul li{
+	float: none;
+	text-align: left;
+
+}
+
+.image-list .rich-image.error-image ul li.error-message {
+	color: red;
+}

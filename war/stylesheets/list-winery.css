@@ -1,0 +1,43 @@
+/******************************** ACTIONS ********************************/
+.winery-info .actions {
+	display: none;
+}
+
+.winery-info:hover .actions {
+	display: block;
+}
+
+
+.winery-info {
+	font-size: 15px;
+}
+
+.winery-info .winery-name{
+	font-weight:bold;
+	font-size:18px;
+	padding:10px 0px 5px 0px;	
+}
+
+.winery-info .winery-contact {
+	color: #888;
+	font-size:12px;
+	line-height:1.5;
+	margin-top:7px;
+}
+
+.winery-info .winery-contact a {
+	color: #888;
+}
+
+.winery-info .winery-contact a:hover {
+	color: #73250D;
+}
+
+.winery-info .winery-notes {
+	color: #666666;
+    font-size: 12px;
+	line-height:1.5;
+    font-weight: normal;
+    padding-top: 10px;
+}
+

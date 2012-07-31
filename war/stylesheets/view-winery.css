@@ -1,0 +1,37 @@
+#tabs-container {
+	margin: 20px 0 10px 0;
+	padding:0px;
+}
+
+.winery-info {
+	font-size: 15px;
+}
+
+.winery-info .winery-name{
+	font-weight:bold;
+	font-size:18px;
+	padding:10px 0px 5px 0px;	
+	margin-bottom:10px;
+}
+
+.item-name {
+	font-size:12px;
+	margin-top:0px;
+}
+
+.photo-list {
+	margin-top: 20px;
+}
+
+.wine-list {
+	margin-top: 20px;
+}
+
+.label {
+	margin-right:0;
+}
+
+#about {
+	font-size: 14px;
+	margin-top:10px;
+}
